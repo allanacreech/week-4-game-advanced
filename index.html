@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Star Wars Card Game - Allana Creech</title>
+
+	<!-- 	Bootstrap, CSS, & FA Link -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/pulse.css">
+
+	<!-- Google Font Link -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+
+</head>
+<body>
+
+	<!--starts background divs-->
+
+
+	<!--end background-->
+
+
+	<div class="container">
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand">Star Wars Card Game - Allana Creech</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+
+						<!-- Large modal -->
+						<button class="btn btn-primary btn-top-nav hvr-pulse" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fa fa-fw fa-info-circle"></i> Game Rules</button>
+
+						<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content modal-game-rules">
+									<div style="overflow:hidden; position:absolute; left:0; top:0; width:50px; height:25px;">
+										<div style="margin-top:-290px;">
+											<object width="420" height="315">
+												<param name="movie" value="http://www.youtube.com/v/EjMNNpIksaI?version=3&amp;hl=en_US&autoplay=1&amp;autohide=2"></param>
+												<param name="allowFullScreen" value="true"></param>
+												<param name="allowscriptaccess" value="always"></param>
+												<embed src="http://www.youtube.com/v/EjMNNpIksaI?version=3&amp;hl=en_US&autoplay=1&amp;autohide=2" type="application/x-shockwave-flash" width="420" height="315" allowscriptaccess="always" allowfullscreen="true"></embed>
+											</object>
+										</div>
+									</div>
+
+									<p id="start">A short time ago in a browser very, very close&hellip;</p>
+
+									<h1>STAR WARS<sub>Look who's trying jQuery</sub></h1>
+
+									<div id="titles">
+										<div id="titlecontent">
+
+											<p class="center">STAR WARS<br />
+												A New Battle CARD GAME</p>
+
+												<p>It is a period of vendor war.</p>
+
+												<p>This is a time where the light and the dark are out of balance. War can be found to reach many galaxies.</p>
+
+												<p>Now you must choose the light or the dark.</p>
+
+												<p>Select your fate by choosing a card to play. Click the card and become the player.</p>
+
+												<p>Select your opponent by clicking on the card.</p>
+
+												<p>Once you have chosen your opponent the battle will start.</p>
+
+												<p>With each strike you grow stronger in the force, but with each attack from your opponent your health points go down.</p>
+
+												<p>Battle till the very end....</p>
+
+												<p>Who will win?</p>
+
+												<p class="center">May The Force Be With You!</p>
+
+												<p>Sorry. Couldn't resist it.</p>
+
+
+
+												<p class="center"><a href="http://www.sitepoint.com/css3-starwars-scrolling-text/">sitepoint.com/<br />css3-starwars-scrolling-text/</a></p>
+
+
+											</div>
+										</div>
+										<iframe style="visibility:hidden" width="560" height="315" src="http://www.youtube.com/embed/1KAOq7XX2OY" frameborder="0" allowfullscreen></iframe>
+									</div>
+								</div>
+							</div>
+						</div><!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
+				</nav>
+
+
+				<div class="row">
+					<div class="col-lg-9">
+						<div class="jumbotron">
+							<div class="row">
+
+								<div class="col-lg-12 text-center">
+									<div class="panel">
+									<div class="emptyMe" id="myDiv1">
+											<h2>Choose Your Card<span class="value"></span></h2>
+											<div id="boy1" class="fimg"> </div> <div id="girl1" class="fimg"> </div> <div id="dog1" class="fimg"></div> <div id="mouse1" class="fimg"> </div> <!-- <div id="fifth1" class="fimg"> </div> <div id="sith1" class="fimg"> </div> -->
+	
+										</div>
+									</div> <!-- end panel -->
+								</div> <!-- end col-lg-6 -->
+							</div>
+
+							<div class="row">
+
+								<div class="col-lg-12 text-center">
+									<div class="panel">
+										<div class="emptyMe2">
+										<h3>Your Player<span id="yourPlayer"></span></h3>
+										</div>
+										<div id="boyto" class="fimg2"></div> <div id="girlto" class="fimg2"></div> <div id="dogto" class="fimg2"></div> <div id="mouseto" class="fimg2"></div> <!-- <div id="fifthto" class="fimg2"></div> <div id="sithto" class="fimg2"></div> -->
+										<div class="panel">
+										<div class="emptyMe3">
+										<h3>Enemies To Attack<span id="enemies"></span> </h3>
+										</div>
+										<div id="boytoo" class="fimg2"></div> <div id="girltoo" class="fimg2"></div> <div id="dogtoo" class="fimg2"></div> <div id="mousetoo" class="fimg2"></div> <!-- <div id="fifthtoo" class="fimg2"></div> <div id="sithtoo" class="fimg2"></div> -->
+										</div>
+									</div> <!-- end panel -->
+								</div> <!-- end col-lg-9 -->
+
+
+							</div> <!-- end row -->
+
+							<div class="row">
+
+								<div class="col-lg-12 text-center">
+									<div class="panel">
+										<div></div>
+									</div> <!-- end panel -->
+								</div> <!-- end col-lg-6 -->
+
+							</div> <!-- end row -->
+
+							<div class="row">
+
+								<div class="col-lg-12 text-center">
+									<div class="panel">
+									</div> <!-- end panel -->
+								</div> <!-- end col-lg-6 -->
+
+							</div> <!-- end row -->
+						</div> <!-- end jumbotron -->
+					</div><!-- end jumbotron container -->
+
+					<!-- begin social sidebar -->
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 text-center">
+						<div class="jumbotron">
+							<h2>Share</h2>
+							<hr>
+
+							<a href="https://www.facebook.com/sharer/sharer.php?u=&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img class="img-social" src="assets/images/fb.png" alt="Share to Facebook" /></a>
+
+							<a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img class="img-social" src="assets/images/twitter.png" alt="Share to Twitter" /></a>
+
+							<a href="https://plus.google.com/share?url=" target="_blank" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.URL)); return false;"><img class="img-social" src="assets/images/googleplus.png" alt="Share to Google Plus" /></a>
+
+
+							<a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=&source=" target="_blank" title="Share on LinkedIn" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img class="img-social" src="assets/images/linkedin.png" alt="Share on LinkedIn" /> </a>    
+
+
+							<a href="http://www.tumblr.com/share?v=3&u=&t=&s=" target="_blank" title="Post to Tumblr" onclick="window.open('http://www.tumblr.com/share?v=3&u=' + encodeURIComponent(document.URL) + '&t=' +  encodeURIComponent(document.title)); return false;"><img class="img-social" src="assets/images/tumblr.png" alt="Share on Tumblr" /></a>
+						</div>
+					</div> <!-- end social sidebar -->
+
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xs-12">
+								<footer class="navbar navbar-default sticky-footer">
+									<div class="container">
+										<span class="text-muted"> &#x000A9; 2016 Allana Creech - UCF Coding Boot Camp</span>
+										<!-- social media icons -->
+										<ul class="nav navbar-nav navbar-right social">
+											<li><a href="#"><i class="fa fa-lg fa-facebook"></i></a></li>
+											
+											<li><a href="#"><i class="fa fa-lg fa-google-plus"></i></a></li>
+											<li><a href="#"><i class="fa fa-lg fa-linkedin"></i></a></li>
+										</ul>
+									</div>
+								</footer>
+							</div></div></div></div>
+
+
+						</div></div></div></div></div>
+
+					</div> <!-- end container -->
+
+					<!-- 	jQuery, Bootstrap JS, & game JS link -->
+					<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+					<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+					<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+
+					<audio src= "assets/music/backgroundMusic.mp3" autoplay="true" width ="180" height= "90" hidden="false" loop="true">
+						<p>If you are reading this, it is because your browser does not support the audio element.     </p>
+
+
+					</audio>
+
+
+
+					<!-- Added link to the jQuery Library and game JS -->
+					<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+					<script type="text/javascript" src="assets/javascript/game.js"></script>	
+				</body>
+				</html>
